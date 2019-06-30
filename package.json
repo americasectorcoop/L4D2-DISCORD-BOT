@@ -1,0 +1,26 @@
+{
+	"name": "botsito",
+	"version": "2.0.0",
+	"description": "Bot for asc on Discord",
+	"main": "index.js",
+	"scripts": {
+		"release": "release-it"
+	},
+	"author": "aleexxx",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^11.5.1",
+		"gamedig": "^1.0.49",
+		"google-translate-api": "^2.3.0",
+		"mysql": "^2.17.1",
+		"ncp": "^2.0.0",
+		"nodemon": "^1.19.1",
+		"request": "^2.88.0",
+		"srcds-rcon": "^2.2.1",
+		"ssh2": "^0.6.2"
+	},
+	"devDependencies": {
+		"@release-it/conventional-changelog": "^1.1.0",
+		"release-it": "^12.2.2"
+	}
+}
