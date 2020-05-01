@@ -1,26 +1,39 @@
 {
-	"name": "botsito",
-	"version": "2.0.0",
-	"description": "Bot for asc on Discord",
-	"main": "index.js",
-	"scripts": {
-		"release": "release-it"
-	},
-	"author": "aleexxx",
-	"license": "ISC",
-	"dependencies": {
-		"discord.js": "^11.5.1",
-		"gamedig": "^1.0.49",
-		"google-translate-api": "^2.3.0",
-		"mysql": "^2.17.1",
-		"ncp": "^2.0.0",
-		"nodemon": "^1.19.1",
-		"request": "^2.88.0",
-		"srcds-rcon": "^2.2.1",
-		"ssh2": "^0.6.2"
-	},
-	"devDependencies": {
-		"@release-it/conventional-changelog": "^1.1.0",
-		"release-it": "^12.2.2"
-	}
+  "name": "botsito",
+  "version": "2.0.0",
+  "description": "Bot for asc on Discord",
+  "scripts": {
+    "release": "release-it",
+    "format": "npx prettier --config .prettierrc.js --write **/**.{js,json}",
+    "tsc": "npx tsc",
+    "build": "npx tsc",
+    "start": "node dist/bot.js",
+    "postinstall": "npx tsc",
+    "dev": "nodemon -e ts --exec \"npx tsc && npm start\""
+  },
+  "author": "aleexxx",
+  "license": "ISC",
+  "dependencies": {
+    "discord-command-parser": "^1.3.3",
+    "discord.js": "^12.2.0",
+    "gamedig": "^2.0.20",
+    "google-translate-api": "^2.3.0",
+    "mysql": "^2.18.1",
+    "ncp": "^2.0.0",
+    "request": "^2.88.2",
+    "srcds-rcon": "^2.2.1",
+    "ssh2": "^0.8.9"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^1.1.4",
+    "@types/gamedig": "^1.0.0",
+    "@types/mysql": "^2.15.10",
+    "@types/node": "^13.13.4",
+    "@types/ws": "^7.2.4",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5",
+    "release-it": "^13.5.7",
+    "typescript": "^3.8.3"
+  }
 }
