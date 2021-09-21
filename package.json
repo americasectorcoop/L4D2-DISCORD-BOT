@@ -21,7 +21,7 @@
     "ncp": "^2.0.0",
     "request": "^2.88.2",
     "srcds-rcon": "^2.2.1",
-    "ssh2": "^0.8.9"
+    "ssh2": "^1.4.0"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^1.1.4",
